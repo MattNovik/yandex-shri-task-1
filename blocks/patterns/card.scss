@@ -1,0 +1,104 @@
+.card {
+    position: relative;
+
+    &_border_all {
+        border: 3px solid var(--border-color);
+    }
+
+    &_view_default {
+        background: var(--bg-default);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        &_distribute_center {
+            // justify-content: center;
+            align-items: center;
+        }
+
+        &_vertical-align_center {
+            // align-items: center;
+            justify-content: center;
+        }
+
+        &_space-a {
+            &_m {
+                padding: var(--padding-m);
+            }
+            
+            &_xl {
+                padding: var(--padding-xl);
+            }
+            
+            &_l {
+                padding: var(--padding-l);
+            }
+
+            &_xxl {
+                padding: var(--padding-xxl);
+            }
+        }
+    }
+
+    &__footer {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &_distribute {
+            &_between {
+                // justify-content: space-between;
+                align-items: space-between;
+            }
+
+            &_center {
+                // justify-content: center;
+                align-items: center;
+            }
+
+            &_right {
+                // justify-content: right;
+                align-items: flex-end;
+            }
+        }
+
+        &_vertical-align {
+            &_center {
+                // align-items: center;
+                justify-content: center;
+            }
+
+            &_top {
+                // align-items: flex-start;
+                justify-content: flex-start;
+            }
+
+            &_bottom {
+                // align-items: flex-end;
+                justify-content: flex-end;
+            }
+        }
+
+        &_space-a {
+            &_m {
+                padding: var(--padding-m);
+            }
+            
+            &_l {
+                padding: var(--padding-l);
+            }
+            
+            &_xl {
+                padding: var(--padding-xl);
+            }
+
+            &_xxl {
+                padding: var(--padding-xxl);
+            }
+        }
+    }
+}

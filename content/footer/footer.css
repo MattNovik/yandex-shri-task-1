@@ -1,0 +1,11 @@
+.footer {
+  padding: var(--padding-xxxl) var(--gap); }
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1144px;
+    margin: auto; }
+  .footer__logo {
+    width: 179px;
+    height: 34px;
+    background: var(--text-color-primary); }

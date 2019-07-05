@@ -1,0 +1,92 @@
+$word-widths: (
+    text_s: (s: 20px, m: 48px, l: 100px),
+    text_m: (s: 24px, m: 56px, l: 114px),
+    text_l: (s: 28px, m: 68px, l: 138px),
+    text_xl: (s: 32px, m: 74px, l: 154px),
+    text_xxl: (s: 36px, m: 88px, l: 184px)
+);
+
+$word-heights: (
+    s: 7px, m: 8px, l: 10px, xl: 11px, xxl: 13px
+);
+
+.text {
+    &_align { 
+        &_center {
+            text-align: center;
+        }
+    }
+
+    &_size {
+        @each $mod in s, m, l, xl, xxl {
+            &_#{$mod} {
+                --word-width-s: #{map-get(map-get($word-widths, "text_#{$mod}"), s)};
+                --word-width-m: #{map-get(map-get($word-widths, "text_#{$mod}"), m)};
+                --word-width-l: #{map-get(map-get($word-widths, "text_#{$mod}"), l)}; 
+                --word-height: var(--font-size-#{$mod});
+                line-height: var(--line-height-#{$mod});
+                --word-margin: calc( ( var(--line-height-#{$mod}) - var(--word-height) ) / 2 );
+            }
+        }
+    }
+
+    &_type {
+        &_h1 {
+            margin: 15px 0 21px;
+        }
+
+        &_h2 {
+            margin: 48px 0 20px;
+        }
+
+        &_h3 {
+            margin: 43px 0 0;
+        }
+
+        &_p {
+            margin: 15px 0 21px;
+        }
+    }
+
+    &_view {
+        &_primary {
+            --word-color: var(--text-color-primary);
+        }
+
+        &_secondary {
+            --word-color: var(--text-color-secondary);
+        }
+
+        &_ghost {
+            --word-color: var(--text-color-ghost);
+        }
+
+        &_link {
+            --word-color: var(--text-color-link);
+        }
+    }
+
+    &__word {
+        display: inline-block;
+        //font-size
+        height: var(--word-height);
+        //line height
+        // margin-top: var(--word-margin);
+        // margin-bottom: var(--word-margin);
+        background: var(--word-color);
+        
+        &_width {
+          &_s {
+            width: var(--word-width-s);
+            }
+
+            &_m {
+                width: var(--word-width-m);
+            }
+
+            &_l {
+                width: var(--word-width-l);
+            }
+        }
+    }
+}

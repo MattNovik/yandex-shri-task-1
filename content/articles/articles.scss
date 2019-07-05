@@ -1,0 +1,19 @@
+.articles {
+  max-width: 453px;
+}
+
+.articles .image {
+  width: 170px;
+  height: 120px;
+  background-color: #000000;
+  background-image: var(--image-inverse-placeholder-url);
+  border: none;
+}
+
+/* .articles__article {
+  justify-content: center;
+} */
+
+.articles__link {
+  margin-top: var(--padding-xs);
+}

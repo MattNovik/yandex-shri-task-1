@@ -1,0 +1,18 @@
+.onoffswitch {
+  display: flex;
+  justify-content: flex-start;
+  width: 97px;
+  height: 32px;
+  border: 2px solid var(--border-color);
+
+  &_on {
+    justify-content: flex-end;
+  }
+
+  &__button {
+    width: 24px;
+    height: 24px;
+    background: var(--border-color);
+    margin: 2px;
+  }
+}

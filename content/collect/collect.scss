@@ -1,0 +1,39 @@
+.collect {
+  min-height: 380px;
+  max-width: 271px;
+
+  .image {
+    height: 160px;
+    background-color: var(--border-color);
+    background-image: var(--image-default-placeholder-url);
+  }
+
+  &__heading {
+    margin-bottom: var(--padding-s);
+  }
+
+  &__progress {
+    height: 8px;
+    border-bottom: 3px solid var(--border-color);
+    box-sizing: content-box;
+  }
+
+  &__done {
+    height: 100%;
+    background-color: var(--text-color-link);
+
+    &_size {
+      &_one-third {
+        width: calc(100% / 3);
+      }
+
+      &_half {
+        width: calc(100% / 2);
+      }
+
+      &_two-thirds {
+        width: calc( (100% / 3) * 2);
+      }
+    }
+  }
+}

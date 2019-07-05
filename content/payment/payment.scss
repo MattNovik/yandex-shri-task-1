@@ -1,0 +1,11 @@
+.payment {
+  background: var(--bg-default);
+
+    &__content {
+      flex-direction: column;
+
+      .form__item:last-child {
+        margin-bottom: 0;
+      }
+    }
+}

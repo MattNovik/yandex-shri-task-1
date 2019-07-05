@@ -1,0 +1,50 @@
+.history {
+  max-width: 749px;
+
+  &__transaction {
+    flex-direction: column;
+  }
+  
+  &__show {
+    width: 100%;
+    cursor: pointer;
+    margin-top: 0px;
+  }
+  
+  &__details {
+    display: flex;
+    width: 100%;
+  }
+  
+  &__destination {
+    width: 100%;
+  }
+  
+  &__label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  &__hide {
+    flex-direction: column;
+  }
+  
+  &__description {
+    flex-direction: column;
+  }
+
+  &__pic {
+    margin-bottom: 4px;
+  }
+
+  &__actions {
+    margin-bottom: 0px;
+  }
+}

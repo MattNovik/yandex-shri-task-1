@@ -1,0 +1,15 @@
+.e-accordion {
+    &__more {
+        display: none;
+
+        &_view {
+            &_default {
+                background: var(--bg-default);
+            }
+        }
+
+        &_show {
+            display: inherit;
+        }
+    }
+}

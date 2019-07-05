@@ -1,0 +1,16 @@
+.header {
+  padding: var(--padding-xxxl) var(--gap);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1144px;
+    margin: auto;
+  }
+
+  &__logo {
+    width: 179px;
+    height: 34px;
+    background: var(--text-color-primary);
+  }
+}

@@ -1,0 +1,24 @@
+.header {
+  padding: var(--padding-xxxl) var(--gap); }
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1144px;
+    margin: auto; }
+  .header__logo {
+    width: 179px;
+    height: 34px;
+    background: var(--text-color-primary); }
+
+.onoffswitch {
+  width: 97px;
+  height: 32px;
+  border: 2px solid var(--border-color);
+  text-align: left; }
+  .onoffswitch_on {
+    text-align: right; }
+  .onoffswitch__button {
+    width: 24px;
+    height: 24px;
+    background: var(--border-color);
+    margin: 2px; }

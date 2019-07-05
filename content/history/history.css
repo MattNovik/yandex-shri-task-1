@@ -1,0 +1,29 @@
+.history {
+  max-width: 749px; }
+  .history__transaction {
+    flex-direction: column; }
+  .history__show {
+    width: 100%;
+    cursor: pointer;
+    margin-top: 0px; }
+  .history__details {
+    display: flex;
+    width: 100%; }
+  .history__destination {
+    width: 100%; }
+  .history__label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .history__time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .history__hide {
+    flex-direction: column; }
+  .history__description {
+    flex-direction: column; }
+  .history__pic {
+    margin-bottom: 4px; }
+  .history__actions {
+    margin-bottom: 0px; }

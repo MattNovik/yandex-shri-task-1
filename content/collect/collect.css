@@ -1,0 +1,22 @@
+.collect {
+  min-height: 380px;
+  max-width: 271px; }
+  .collect .image {
+    height: 160px;
+    background-color: var(--border-color);
+    background-image: var(--image-default-placeholder-url); }
+  .collect__heading {
+    margin-bottom: var(--padding-s); }
+  .collect__progress {
+    height: 8px;
+    border-bottom: 3px solid var(--border-color);
+    box-sizing: content-box; }
+  .collect__done {
+    height: 100%;
+    background-color: var(--text-color-link); }
+    .collect__done_size_one-third {
+      width: calc(100% / 3); }
+    .collect__done_size_half {
+      width: calc(100% / 2); }
+    .collect__done_size_two-thirds {
+      width: calc( (100% / 3) * 2); }

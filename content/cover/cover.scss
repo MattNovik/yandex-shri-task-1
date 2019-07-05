@@ -1,0 +1,17 @@
+.cover {
+  min-height: 408px;
+  width: 354px;
+}
+
+.cover__preview {
+  padding: var(--padding-xxl) var(--padding-xxl) var(--padding-m) var(--padding-xxl);
+}
+
+.cover__info {
+  padding-top: 0px;
+}
+
+.cover__image {
+  height: 180px;
+  background-image: var(--image-inverse-placeholder-url);
+}

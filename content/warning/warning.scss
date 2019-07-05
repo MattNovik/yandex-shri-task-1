@@ -1,0 +1,18 @@
+.warning {
+  height: 100%;
+  min-height: 335px;
+  // max-width: 552px;
+  text-align: center;
+  position: relative;
+}
+
+.warning__button-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.warning .placeholder {
+  margin-top: var(--padding-m);
+  margin-bottom: var(--padding-m);
+}

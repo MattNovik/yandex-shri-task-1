@@ -1,0 +1,66 @@
+.list {
+    &_border {
+        &_all {
+            border: 3px solid var(--border-color);
+        }
+    }
+
+    &_view {
+        &_default {
+            background: var(--bg-default);
+        }
+    }
+
+    &__item {
+        display: flex;
+
+        &_border {
+            &_top {
+                border-top: 3px solid var(--border-color);
+            }
+
+            &_bottom:not(:last-child) {
+                border-bottom: 3px solid var(--border-color);
+            }
+        }
+
+        &_distribute {
+            &_between {
+                justify-content: space-between;
+            }
+        }
+
+        &_veritcal-align {
+            &_center {
+                align-items: center;
+            }
+        }
+
+        &_indent-t {
+            &_m {
+                margin-top: var(--padding-m);
+            }
+        }
+
+        &_indent-b {
+            //move to mixin
+            @each $mod in s, m, l, xl {
+                &_#{$mod} {
+                    margin-bottom: var(--padding-#{$mod});
+                }
+            }
+        }
+
+        &_space-b {
+            &_s {
+                padding-bottom: var(--padding-s);
+            }
+        }
+
+        &_space-a {
+            &_l {
+                padding: var(--padding-l);
+            }
+        }
+    }
+}

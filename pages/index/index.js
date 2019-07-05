@@ -1,4 +1,4 @@
-import parseBEM from '../../template-engine.js';
+import parseBEM from '../../build/template-engine.js';
 import header from '../../content/header/header.js';
 import footer from '../../content/footer/footer.js';
 import payment from '../../content/payment/payment.js';

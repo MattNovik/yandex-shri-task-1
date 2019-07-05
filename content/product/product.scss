@@ -1,15 +1,14 @@
 .product {
     min-height: 280px;
-    // max-width: 212px;
+
+    .image {
+      height: 160px;
+      background-color: #000000;
+      background-image: var(--image-inverse-placeholder-url);
+    }
 }
 
-.product__image {
-    height: 160px;
-    background-color: #000000;
-    background-image: var(--image-inverse-placeholder-url);
-}
-
-.theme_color_project-inverse .product__image {
+.theme_color_project-inverse .product .image {
     background-color: #ffffff;
     background-image: var(--image-default-placeholder-url);
 }

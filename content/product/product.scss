@@ -8,7 +8,8 @@
     }
 }
 
-.theme_color_project-inverse .product .image {
+.theme_color_project-inverse .product .image,
+.product.theme_color_project-inverse .image {
     background-color: #ffffff;
     background-image: var(--image-default-placeholder-url);
 }

@@ -86,7 +86,7 @@ const subscription = {
           mix: {
             block: 'list',
             elem: 'item',
-            elemMods: { 'space-b': 's' }
+            elemMods: { 'indent-b': 's' }
           },
           content: {
             block: 'input',

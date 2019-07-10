@@ -1,15 +1,17 @@
 .product {
     min-height: 280px;
 
-    .image {
-      height: 160px;
-      background-color: #000000;
-      background-image: var(--image-inverse-placeholder-url);
+    &__image {
+      .image {
+        height: 160px;
+        background-color: #000000;
+        background-image: var(--image-inverse-placeholder-url);
+      }
     }
 }
 
-.theme_color_project-inverse .product .image,
-.product.theme_color_project-inverse .image {
+.theme_color_project-inverse .product__image .image,
+.product.theme_color_project-inverse .product__image .image {
     background-color: #ffffff;
     background-image: var(--image-default-placeholder-url);
 }

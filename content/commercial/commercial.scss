@@ -1,26 +1,25 @@
 .commercial {
   min-height: 430px;
-  // max-width: 354px;
-}
 
-.commercial__image {
-  height: 180px;
-  background-image: var(--image-inverse-placeholder-url);
-}
+  &__image {
+    height: 180px;
+    background-image: var(--image-inverse-placeholder-url);
+  }
 
-.commercial__navigation {
-  display: flex;
-  justify-content: center;
-  margin-top: var(--padding-s);
-}
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--padding-s);
+  }
 
-.commercial__page-button {
-  width: 8px;
-  height: 8px;
-  background: var(--text-color-primary);
-  margin-right: var(--padding-xs);
-}
+  &__page-button {
+    width: 8px;
+    height: 8px;
+    background: var(--text-color-primary);
+    margin-right: var(--padding-xs);
 
-.commercial__page-button:last-child {
-  margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

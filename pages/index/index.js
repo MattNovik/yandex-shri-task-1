@@ -15,7 +15,7 @@ const productWrapped = {
 };
 
 const genProducts = (num) => {
-  let products = [];
+  const products = [];
   for (let i = 0; i < num; i += 1) {
     products.push(productWrapped);
   }

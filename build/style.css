@@ -706,13 +706,13 @@
 
 .product {
   min-height: 280px; }
-  .product .image {
+  .product__image .image {
     height: 160px;
     background-color: #000000;
     background-image: var(--image-inverse-placeholder-url); }
 
-.theme_color_project-inverse .product .image,
-.product.theme_color_project-inverse .image {
+.theme_color_project-inverse .product__image .image,
+.product.theme_color_project-inverse .product__image .image {
   background-color: #ffffff;
   background-image: var(--image-default-placeholder-url); }
 
@@ -740,12 +740,12 @@
 
 .onoffswitch {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 97px;
   height: 32px;
   border: 2px solid var(--border-color); }
   .onoffswitch_on {
-    justify-content: flex-end; }
+    justify-content: flex-start; }
   .onoffswitch__button {
     width: 24px;
     height: 24px;

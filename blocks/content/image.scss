@@ -5,3 +5,14 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.project-default .image {
+  background-color: #ffffff;
+  background-image: var(--image-default-placeholder-url);
+}
+
+.project-inverse .image, 
+.project-brand .image {
+  background-color: #000000;
+  background-image: var(--image-inverse-placeholder-url);
+}

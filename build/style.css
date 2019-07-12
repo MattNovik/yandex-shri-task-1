@@ -310,35 +310,38 @@
   .icon-plus__icon_indent-l_l {
     margin-left: var(--padding-l); }
 
-.informer {
+.informer_border_all {
+  border: 3px solid var(--border-color); }
+
+.informer_view_default {
   background: var(--bg-default); }
-  .informer_border_all {
-    border: 3px solid var(--border-color); }
-  .informer__content {
-    display: flex;
-    flex-direction: column; }
-    .informer__content_distribute_default {
-      align-items: flex-start; }
-    .informer__content_distribute_center {
-      align-items: center; }
-    .informer__content_distribute_between {
-      align-items: space-between; }
-    .informer__content_space-a_xl {
-      padding: var(--padding-xl); }
-    .informer__content_space-a_xxl {
-      padding: var(--padding-xxl); }
-  .informer__action {
-    display: flex; }
-    .informer__action_distribute_default {
-      justify-content: flex-start; }
-    .informer__action_distribute_center {
-      justify-content: center; }
-    .informer__action_distribute_between {
-      justify-content: space-between; }
-    .informer__action_space-a_xl {
-      padding: var(--padding-xl); }
-    .informer__action_space-a_xxl {
-      padding: var(--padding-xxl); }
+
+.informer__content {
+  display: flex;
+  flex-direction: column; }
+  .informer__content_distribute_default {
+    align-items: flex-start; }
+  .informer__content_distribute_center {
+    align-items: center; }
+  .informer__content_distribute_between {
+    align-items: space-between; }
+  .informer__content_space-a_xl {
+    padding: var(--padding-xl); }
+  .informer__content_space-a_xxl {
+    padding: var(--padding-xxl); }
+
+.informer__action {
+  display: flex; }
+  .informer__action_distribute_default {
+    justify-content: flex-start; }
+  .informer__action_distribute_center {
+    justify-content: center; }
+  .informer__action_distribute_between {
+    justify-content: space-between; }
+  .informer__action_space-a_xl {
+    padding: var(--padding-xl); }
+  .informer__action_space-a_xxl {
+    padding: var(--padding-xxl); }
 
 .list_border_all {
   border: 3px solid var(--border-color); }
@@ -547,11 +550,12 @@
   .text__word_width_l {
     width: var(--word-width-l); }
 
-.placeholder {
+.placeholder_size_m {
+  width: 72px;
+  height: 72px; }
+
+.placeholder_view_default {
   background: var(--text-color-primary); }
-  .placeholder_size_m {
-    width: 72px;
-    height: 72px; }
 
 .e-accordion__more {
   display: none; }

@@ -1,9 +1,14 @@
 .informer {
-    background: var(--bg-default);
 
     &_border {
       &_all {
         border: 3px solid var(--border-color);
+      }
+    }
+
+    &_view {
+      &_default {
+        background: var(--bg-default);
       }
     }
 
